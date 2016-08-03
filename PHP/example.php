@@ -24,7 +24,7 @@ $apiId = ""; //your api id
 $apiSecret = ""; //your api secret
 $userEmail = ""; //your user email
 $userPassword = ""; //your user password
-$host = ""; // for production environment 
+$host = "api.cloud.materialise.com"; // for production environment 
 
 
 $tokenProvider = new TokenProvider(new AccessApiClient($host), $apiId, $apiSecret, $userEmail, $userPassword);
