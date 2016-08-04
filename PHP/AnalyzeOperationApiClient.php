@@ -46,7 +46,6 @@ namespace MaterialiseCloud
 			$result->QualityParams->IntersectingTriangles=$response->qualityParams->intersectingTriangles;
 			$result->QualityParams->IsFacetingScoreOk=$response->qualityParams->isFacetingScoreOk;
 
-
 			return $result;
 		}
 	}
