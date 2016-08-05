@@ -127,16 +127,16 @@ $resultId = $reducer->GetReduceTrianglesOperationResult($operationId);
 echo "reducing done\n";
 */
 
-/**/
+/*
 echo "running hollowing\n";
 $hollower = new HollowingOperationApiClient($host, $tokenProvider);
 $operationId = $hollower->Hollow($resultId, 1);
 $hollower->WaitForOperationToFinish($operationId);
 $resultId = $hollower->GetHollowingOperationResult($operationId);
 echo "hollowing done\n";
-/**/
+*/
 
-/**/
+/*
 echo "running wallthickness analysis\n";
 $analyzer = new WallThicknessAnalysisOperationApiClient($host, $tokenProvider);
 $operationId = $analyzer->Analyze($resultId, 1, 2);
@@ -147,7 +147,7 @@ echo "analysis done\n";
 echo "downloading analysis model\n";
 $filesClient->DownloadFile($analysisResults->FileId, "analysis_model.stl");
 echo "analysis model download done\n";
-/**/
+*/
 
 echo "exporting\n";
 $exporter = new ExportOperationApiClient($host, $tokenProvider);
